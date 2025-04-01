@@ -16,7 +16,7 @@ function Breadcrumbs() {
                 {pathnames.map((value, index) => {
                     const to = `/${pathnames.slice(0, index + 1).join("/")}`;
                     return (
-                        <li key={to} className="flex items-center">
+                        <li key={to} className="flex text-base items-center">
                             <span className="mx-2 text-gray-500">/</span>
                             <Link to={to} className="text-blue-600 hover:text-blue-800">
                                 {value}
